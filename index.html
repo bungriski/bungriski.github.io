@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Undangan Online Bung System</title>
+    <link rel="icon" type="image/png" sizes="2124x1960" href="assets/img/bungsystem.png">
+    <link rel="icon" type="image/png" sizes="2124x1960" href="assets/img/bungsystem.png">
+    <link rel="icon" type="image/png" sizes="2124x1960" href="assets/img/bungsystem.png">
+    <link rel="icon" type="image/png" sizes="2124x1960" href="assets/img/bungsystem.png">
+    <link rel="icon" type="image/png" sizes="2124x1960" href="assets/img/bungsystem.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display+SC">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/Basic-fancyBox-Gallery-v2.css">
+    <link rel="stylesheet" href="assets/css/best-carousel-slide.css">
+    <link rel="stylesheet" href="assets/css/Bung.css">
+    <link rel="stylesheet" href="assets/css/Button-Icon-Counter.css">
+    <link rel="stylesheet" href="assets/css/Countdown.css">
+    <link rel="stylesheet" href="assets/css/Customizable-Background--Overlay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <section><div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v8.0" nonce="LJ1IXIND"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4QZRCKVZDK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4QZRCKVZDK');
+</script><audio autoplay="" loop="" id="BungAudio">
+  <source src="assets/audio/ost.mp3" type="audio/mpeg"> 
+</audio>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+    $("#sambutanbung").click(function(){
+            $("#sambutanbung").fadeOut(500);
+        });
+});
+
+// Function Auto Tap
+var myVar = setInterval(myFunction, 10000);
+function myFunction() {
+  document.getElementById("sambutanbung").click();
+}
+</script>
+<div onclick="playAudio()" type="button" id="sambutanbung">
+    <div class="row" style="margin:0 auto;">
+        <div class="tapsambutan col-md-6 offset-md-3 col-sm-12 box">   
+            
+            <iframe id="imgload" style="display:none" src="assets/img/blank.png"></iframe>
+            
+            <h2 id="DataUndanganAwal" style="display:none">
+            <span style="font-family: Montez, cursive;letter-spacing: 5px;color: #f69d9d;">Yth.</span>
+            
+            <span style="font-family: Montez, cursive;letter-spacing: 5px;color: #f69d9d;" id="NamaUndanganAwal">Tamu Undangan</span>
+            </h2>
+                 
+            <p>Terima kasih telah mengunjungi website undangan kami.<br> Disini kami mengundang anda untuk hadir pada acara 3 bulanan anak kami.</p>
+            <br><br>
+            
+            <p><strong>LIHAT UNDANGAN</strong></p>
+        </div>
+    </div>
+</div></section>
+    <div id="home" style="background-position: center;background-size: cover;background-repeat: no-repeat;background-image: url(&quot;assets/img/bg.jpg&quot;);height: 100vh;">
+        <div class="d-flex justify-content-center align-items-center" style="min-height: initial;width: 100vw;position: absolute;left: 0;height: 100vh;">
+            <div class="d-flex align-items-center order-12">
+                <div class="container">
+                    <h3 class="text-capitalize text-center" style="color: rgb(242,245,248);padding-top: 0.25em;padding-bottom: 0.25em;font-weight: normal;font-family: 'Dancing Script', cursive;font-size: 30px;">Upacara 3 Bulanan<br></h3>
+                    <h1 class="text-uppercase text-center" style="color: rgb(242,245,248);font-size: 60px;font-weight: bold;font-family: 'Playfair Display SC', serif;">Wira</h1>
+                    <h3 class="text-capitalize text-center" style="color: rgb(242,245,248);padding-top: 0.25em;padding-bottom: 0.25em;font-weight: normal;font-family: 'Dancing Script', cursive;font-size: 35px;">Minggu,&nbsp;12 juni 2022<br></h3>
+                    <div class="text-center" id="DataUndangan"><h2 id="DataUndanganUtama" style="display:none">
+            <span style="font-family: Dancing Script;font-size: 40px;letter-spacing: 5px;color: #fff;">Yth.</span>
+            
+            <span style="font-family: Montez, cursive;font-size: 50px;letter-spacing: 5px;color: #fff;" id="NamaUndangan">Tamu Undangan</span>
+</h2></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top justify-content-center:" id="menu" style="padding-right: 25%;padding-left: 25%;text-align: center;background: #000000;border: 5px solid #CB945F;border-left-width: 5px;border-left-color: #CB945F;color: rgb(33, 37, 41);">
+        <div class="container-fluid"><a class="navbar-brand" href="#home" style="color: #CB945F;font-family: 'Dancing Script', cursive;font-size: 30px;">Wira</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="text-align: center;background: #CB945F;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon float-right"></span></button>
+            <div class="collapse navbar-collapse text-center d-lg-flex justify-content-lg-center align-items-lg-center" id="navcol-1" style="text-align: center;">
+                <ul class="navbar-nav" data-toggle="collapse" data-target=".navbar-collapse.show" style="color: #CB945F;font-family: 'Playfair Display SC', serif">
+                    <li class="nav-item"><a class="nav-link active menu" href="#acara" style="color: #CB945F;">resepsi</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#gmaps" style="color: #CB945F;">lokasi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="text-center" data-aos="zoom-in-up" id="anak" style="padding-bottom: 75px;background: #000000;">
+        <div><img class="img-fluid" src="assets/img/BG/bg11-kecil.png" loading="lazy" style="padding-right: 25%;padding-left: 25%;" width="80%">
+            <h5 style="font-family: 'Dancing Script', cursive;color: #CB945F;font-size: 50px;">Om Swastyastu<br></h5><img class="img-fluid" src="assets/img/BG/bg11-kecil.png" loading="lazy" style="padding-right: 25%;padding-left: 24%;filter: hue-rotate(0deg);transform: rotate(180deg);" width="80%">
+            <h5 style="font-family: 'Open Sans', sans-serif;color: #CB945F;font-size: 20px;"><br>Atas Asung Kertha Wara Nugraha<br>Ida Sang Hyang Widhi Wasa/Tuhan Yang Maha Esa, perkenankan kami<br>mengundang Bapak/Ibu/Saudara/i pada Upacara 3 Bulanan putra kami.<br><br></h5>
+        </div>
+        <div style="padding: 10%;">
+            <h5 style="font-family: 'Dancing Script', cursive;color: #CB945F;font-size: 150px;">Wira</h5>
+            <h5 style="color: #CB945F;font-family: 'Playfair Display SC', serif;font-size: 30px;">komang agus wira pradnya putra<br></h5>
+            <p style="font-family: 'Open Sans', sans-serif;color: #CB945F;font-size: 20px;"><br><strong>Putra Ketiga Dari Pasangan</strong><br><br>I Gede Sujana<br>&amp;<br>I Dewa Ayu Puspita Dewi<br></p>
+        </div>
+    </div>
+    <div class="text-center" data-aos="zoom-in" id="acara" style="padding-top: 75px;padding-bottom: 75px;background: #000000;">
+        <div><img class="img-fluid" src="assets/img/BG/bg11-kecil.png" loading="lazy" style="padding-right: 25%;padding-left: 25%;" width="80%">
+            <h5 style="font-family: 'Dancing Script', cursive;color: #CB945F;font-size: 50px;">Resepsi<br></h5><img class="img-fluid" src="assets/img/BG/bg11-kecil.png" loading="lazy" style="padding-right: 25%;padding-left: 24%;filter: hue-rotate(0deg);transform: rotate(180deg);" width="80%">
+        </div>
+        <div style="padding-top: 50px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 offset-md-1">
+                        <hr style="background: #CB945F;">
+                        <div style="padding-top: 1rem;padding-bottom: 1rem;"><i class="fa fa-calendar" style="color: #CB945F;height: 15px;font-size: 50px;"></i></div>
+                        <div style="padding-top: 1rem;padding-bottom: 1rem;">
+                            <p style="color: #CB945F;font-family: 'Playfair Display SC', serif;font-weight: bold;font-size: 25px;">Minggu,<br>12 Juni 2022</p>
+                        </div>
+                        <hr style="background: #CB945F;">
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4 offset-md-1">
+                        <hr style="background: #CB945F;">
+                        <div style="padding-top: 1rem;padding-bottom: 1rem;"><i class="fa fa-clock-o" style="color: #CB945F;height: 15px;font-size: 50px;"></i></div>
+                        <div style="padding-top: 1rem;padding-bottom: 1rem;">
+                            <p style="color: #CB945F;font-family: 'Playfair Display SC', serif;font-weight: bold;font-size: 25px;">Pukul,<br>11.00 WITA - Selesai<br></p>
+                        </div>
+                        <hr style="background: #CB945F;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gmaps">
+            <h5 class="text-break justify-content-center align-items-center align-content-center" style="font-family: 'Playfair Display SC', serif;color: #CB945F;font-size: 30px;"><br>Rumah Kediaman :<br><br>BR. DUURAN, DESA TERI EKA BUANA, KEC. SIDEMEN, KAB. KARANGASEM<br></h5>
+            <div><a class="btn" role="button" style="background: #B9711F;color: rgb(0,0,0);font-family: 'Playfair Display SC', serif;font-size: 25px;" href="https://goo.gl/maps/tXjSZNyBG9BKg9LU6" target="_blank"><i class="fas fa-map-marker-alt" style="margin-right: .4rem;"></i><span class="text-uppercase">petunjuk ke lokasi</span></a></div>
+        </div>
+        <div style="padding-top: 2rem;">
+            <h5 class="text-capitalize" style="font-family: 'Dancing Script', cursive;color: #CB945F;font-size: 50px;">Hitung Mundur Acara</h5>
+            <div class="container">
+                <div class="row big-countdown" data-countdown="06/12/2022 11:00:00">
+                    <div class="col-6 col-md-2 offset-md-2" style="color: rgb(255,255,255);padding: 0.5rem;">
+                        <div style="padding-bottom: 1rem;padding-top: 1rem;border-radius: 20px;background: #B9711F;"><span class="number-days" style="margin-top: 0px;color: rgb(4,4,4);">00</span><span class="text-capitalize txt-countdown">hari</span></div>
+                    </div>
+                    <div class="col-6 col-md-2" style="color: rgb(255,255,255);padding: 0.5rem;">
+                        <div style="padding-top: 1rem;padding-bottom: 1rem;border-radius: 20px;background: #B9711F;"><span class="number-hours" style="margin-top: 0px;color: rgb(0,0,0);">00</span><span class="text-capitalize txt-countdown">jam</span></div>
+                    </div>
+                    <div class="col-6 col-md-2" style="color: rgb(255,255,255);padding: 0.5rem;">
+                        <div style="border-radius: 20px;padding-top: 1rem;padding-bottom: 1rem;background: #B9711F;"><span class="number-minutes" style="margin-top: 0px;color: rgb(0,0,0);">00</span><span class="text-capitalize txt-countdown">menit</span></div>
+                    </div>
+                    <div class="col-6 col-md-2" style="color: rgb(255,255,255);padding: 0.5rem;">
+                        <div style="border-radius: 20px;padding-top: 1rem;padding-bottom: 1rem;background: #B9711F;"><span class="number-seconds" style="margin-top: 0px;color: rgb(0,0,0);">00</span><span class="text-capitalize txt-countdown">detik</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center" data-aos="fade-up" style="padding-top: 3rem;background: #000000;padding-bottom: 3rem;">
+        <div class="container text-center">
+            <p style="color: #CB945F;font-family: 'Open Sans', sans-serif;">Merupakan sebuah kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan<br>hadir untuk memberikan doa restu.<br>Atas kehadirannya kami ucapkan<br>terima kasih.<br></p>
+            <p style="color: #CB945F;font-family: 'Open Sans', sans-serif;padding-top: 2rem;padding-bottom: 2rem;">Kami Yang Berbahagia<br>Keluarga<br></p>
+            <p class="lead text-nowrap" style="color: #CB945F;font-family: 'Open Sans', sans-serif;padding-top: 2rem;padding-bottom: 2rem;">I Gede Sujana<br>&amp;<br>I Dewa Ayu Puspita Dewi<br></p>
+            <h5 style="font-family: 'Dancing Script', cursive;color: #CB945F;font-size: 50px;">Om Shanti, Shanti, Shanti Om<br></h5>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="background: #000000;padding-top: 3rem;padding-bottom: 3rem;">
+        <p style="text-align: center;color: rgb(251,251,251);font-family: 'Open Sans', sans-serif;font-size: 20px;">Untuk menjaga acara kami aman dari resiko penularan virus Covid-19,<br>Tamu Undangan dihimbau untuk mengikuti protokol kesehatan pencegahan penularan Covid - 19<br></p>
+        <div style="padding-top: 50px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 offset-md-1">
+                        <div style="padding-top: 1rem;padding-bottom: 1rem;text-align: center;"><img src="assets/img/Covid/masker.png" width="50%"></div>
+                        <div style="padding-top: 1rem;padding-bottom: 1rem;text-align: center;">
+                            <p style="color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: bold;font-size: 15px;">Gunakan Masker<br></p>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4 offset-md-1">
+                        <div style="padding-top: 1rem;padding-bottom: 1rem;text-align: center;"><img src="assets/img/Covid/suhu-tubuh.png" width="50%"></div>
+                        <div style="padding-top: 1rem;padding-bottom: 1rem;text-align: center;">
+                            <p style="color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: bold;font-size: 15px;">Cek Suhu Tubuh<br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="padding-top: 50px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 offset-md-1">
+                        <div style="padding-top: 1rem;padding-bottom: 1rem;text-align: center;"><img src="assets/img/Covid/cuci-tangan.png" width="50%"></div>
+                        <div style="padding-top: 1rem;padding-bottom: 1rem;text-align: center;">
+                            <p style="color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: bold;font-size: 15px;">Cuci Tangan<br></p>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4 offset-md-1">
+                        <div style="padding-top: 1rem;padding-bottom: 1rem;text-align: center;"><img src="assets/img/Covid/jaga-jarak.png" width="50%"></div>
+                        <div style="padding-top: 1rem;padding-bottom: 1rem;text-align: center;">
+                            <p style="color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: bold;font-size: 15px;">Jaga Jarak<br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/Bung.js"></script>
+    <script src="assets/js/Countdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+@media (min-width: 577px) {
+  .icon-bar {
+    width: 75%;
+    background-color: #000;
+    overflow: auto;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #CB945F;
+    border-radius: 20px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .icon-bar {
+    width: 100%;
+    background-color: #000;
+    overflow: auto;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #CB945F;
+    border-radius: 20px;
+    margin: auto;
+  }
+}
+
+.icon-bar a {
+  float: left;
+  width: 33%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #CB945F;
+}
+
+.border-bung {
+  border-color: #0069d9;
+}
+
